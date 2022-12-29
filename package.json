@@ -5,8 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "start": "concurrently \"vite build --watch\" \"npm run dev\"",
-    "vite:build": "vite build",
+    "start": "npm run dev",
+    "build": "vite build",
+    "watch": "vite build --watch",
     "test": "jest --verbose --watchAll",
     "lint": "eslint --ext .js,.jsx ."
   },
