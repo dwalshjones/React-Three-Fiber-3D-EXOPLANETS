@@ -12,5 +12,5 @@ COPY . .
 
 EXPOSE 3001
 
-CMD ["npm", "run", "vite:build"]
+CMD ["npm", "start"]
 
