@@ -1,16 +1,16 @@
-# FROM node:12.14.1
+FROM node:12.14.1
 
-# WORKDIR /app
+WORKDIR /app
 
-# COPY package*.json ./
+COPY package*.json ./
 
-# RUN npm install --force
+RUN npm install --force
 
-# COPY . .
+COPY . .
 
-# # ENV PORT=3001
+# ENV PORT=3001
 
-# EXPOSE 3001
+EXPOSE 3001
 
-# CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
 
