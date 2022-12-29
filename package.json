@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "",
-    "dev": "run-p dev:server dev:client",
+    "dev": "run-p dev:client",
     "dev:server": "nodemon --watch server server/index.js",
     "dev:client": "vite",
     "vite:start": "vite",
