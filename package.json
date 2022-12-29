@@ -4,11 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "",
     "dev": "vite",
-    "dev:server": "nodemon --watch server server/index.js",
-    "dev:client": "vite",
-    "vite:start": "vite",
+    "start": "concurrently \"vite build --watch\" \"npm run dev\"",
     "vite:build": "vite build",
     "test": "jest --verbose --watchAll",
     "lint": "eslint --ext .js,.jsx ."
