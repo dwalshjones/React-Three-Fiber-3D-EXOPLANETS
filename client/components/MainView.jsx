@@ -17,13 +17,14 @@ import HD189733b from './planets/HD189733b'
 import Kepler22B from './planets/Kepler22b'
 import Upsilon from './planets/Upsilon'
 import Cancri from './planets/Cancri'
-// import Music from './Sound'
+import Music from './Sound'
 import Typing from './Typing'
 
 function MainView() {
   return (
     <>
       <Hud />
+      <Music />
       <Canvas camera={{ position: [0, -10, 80], fov: 50 }} dpr={[1, 2]}>
         <spotLight position={[10, 10, 10]} angle={0.3} />
         <OrbitControls
